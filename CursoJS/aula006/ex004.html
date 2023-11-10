@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        //Declara uma variavel numerica
+        var salario = Number(window.prompt('Digite seu salário: '))
+        //Mostra no corpo do site o valor atribuido a variavel em reais.
+        document.write(`Seu salário é de ${salario.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})} reais.`)
+    </script>
+</body>
+</html>
